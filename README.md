@@ -21,10 +21,10 @@ focus on UI and MVC pattern so data is hard coded in dummy EF-like context class
 
 The form can be used to perform two types of searches:
 
-1) Security Code: if a symbol is matched exactly, it is returned in results table
+1. Security Code: if a symbol is matched exactly, it is returned in results table
    Use: YHOO, MSFT, AAPL, GOOGL
 
-2) Search for text: if any of the other (non symbol) fields contain the search 
+2. Search for text: if any of the other (non symbol) fields contain the search 
    string they will be returned in results table
 
 
