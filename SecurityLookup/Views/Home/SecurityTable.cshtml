@@ -1,0 +1,29 @@
+﻿@using MvcApp.DataAccess
+@model MvcApp.Models.HomeModel
+
+<table class="table table-striped">
+    <thead class="result-header">
+        <tr>
+            <td>SecurityId</td>
+            <td>SecurityCode</td>
+            <td>SecurityName</td>
+            <td>Sedol</td>
+            <td>Cusip</td>
+            <td>Isin</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{ foreach (Security security in Model.Securities)
+            {
+                <tr>
+                    <td>@security.SecurityId</td>
+                    <td>@security.SecurityCode</td>
+                    <td>@security.SecurityName</td>
+                    <td>@security.Sedol</td>
+                    <td>@security.Cusip</td>
+                    <td>@security.Isin</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

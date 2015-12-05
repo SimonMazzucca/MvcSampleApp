@@ -1,0 +1,52 @@
+﻿@using MvcApp.DataAccess
+@model MvcApp.Models.HomeModel
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="row">
+
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Security Lookup
+            </div>
+            <div class="panel-body" >
+                <table id="securityLookupTable">
+                    <tr>
+                        <td class="form-label">Security Code</td>
+                        <td>
+                            <input id="symbol" type="text" placeholder="Enter security code..." />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label" >Search for text</td>
+                        <td>
+                            <input id="searchText" type="text" placeholder="Enter any text..." />
+                        </td>
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <button id="submitButton" class="btn btn-primary" onclick="lookupSecurity();">
+                                Submit
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Results
+            </div>
+            <div class="panel-body" id="securityTableContainer">
+                @{ Html.RenderPartial("SecurityTable"); }
+            </div>
+        </div>
+    </div>
+
+</div>
+
