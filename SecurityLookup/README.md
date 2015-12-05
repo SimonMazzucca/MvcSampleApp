@@ -23,11 +23,6 @@ The form can be used to perform two types of searches:
    string they will be returned in results table
 
 
-## Contributing
-
-Simon Mazzucca
-
-
 ## Relevant Files
 
 Index.cshtml
@@ -62,3 +57,7 @@ Site.css
 
 I wrote this for an interview.
 
+
+## Contributing
+
+Simon Mazzucca
