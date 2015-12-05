@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace MvcApp
@@ -9,6 +10,15 @@ namespace MvcApp
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+
+        /// <summary>
+        /// Not implemented. 
+        /// This is where Application level exceptions should be logged and handled
+        /// </summary>
+        protected void Application_Error(object sender, EventArgs e)
+        {
+
         }
     }
 }
