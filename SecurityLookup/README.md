@@ -28,11 +28,6 @@ The form can be used to perform two types of searches:
 Simon Mazzucca
 
 
-## History
-
-I wrote this for an interview.
-
-
 ## Relevant Files
 
 Index.cshtml
@@ -61,3 +56,9 @@ HomeModel.cs
 Site.css
 •	#securityLookupTable and #submitButton apply to those 2 elements and those 2 only
 •	.form-label and .result-header apply to any element of that class
+
+
+## History
+
+I wrote this for an interview.
+
